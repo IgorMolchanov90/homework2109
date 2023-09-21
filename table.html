@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {color: red;}
+        table, td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+<tr>
+    <td>
+        <form action="" method="get">
+            
+                Введите имя
+                <p><input type="text" name="login" required placeholder="E-mail или Nickname"><br></p>
+                Введите пароль 
+                <p><input type="password" name="password" placeholder="******"></p>
+            
+            <p>Какой диск вы хотите получить?</p>
+            <p><input type="radio" name="disk" value="cd">CD <br></p>
+            <p><input type="radio" name="disk" value="dvd">DVD <br></p>
+
+            <p>Какие обучающие курсы вы хотите видеть на диске?</p>
+            <p><input type="checkbox" name="kurs" value="photoshop">Курсы по Фотошопу</p>
+            <p><input type="checkbox" name="kurs" value="adobe">Курсы по Adobe Dreamweaver</p>
+            <p><input type="checkbox" name="kurs" value="php">Курсы по PHP</p>
+            <p>Выберите способ доставки:</p>
+            <select name="delivery" id="">
+                <option value="courier">Курьер</option>
+                <option value="pvz">Пункт выдачи</option>
+                <option value="post">Почта</option>
+            </select>
+            <p>Введите адрес для доставки:</p>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
+            </br>
+            <input type="submit" value="Сделать заказ">
+            <input type="reset" value="Отмена">
+        </form>
+
+    </td>
+</tr>
+    </table>
+</body>
+</html>
